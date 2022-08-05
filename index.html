@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
     <title>Panda Commerce</title>
     <link rel="stylesheet" href="css/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+
+   
 </head>
 <body>
 
@@ -51,7 +55,7 @@
                     <h1>Cool Dude Headphone</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, molestias.klkldj ksdkslj sldsjlkjs skjskjdskj slkkssj kdskjdkjsdjs knksdsdjskdjaj</p>
                     <h1 class="price">$500</h1>
-                    <button class="buy-now-button"> Buy Now</button>
+                    <button onclick="myFunction()" class="buy-now-button"> Buy Now</button>
                   </div>
                   <div class="col-md-5"> <img class="d-block w-100" src="banner-images/headphone.png" alt="First slide"></div>
                 </div>
@@ -63,7 +67,7 @@
                     <h1>Mega LCD  TV for Sports</h1>
                     <P>This is the best tv for people who just want to waste time infornt of tv.</P>
                     <h1 class="price">$420</h1>
-                    <button class="buy-now-button"> Buy Now</button>
+                    <button onclick="myFunction()" class="buy-now-button"> Buy Now</button>
                   </div>
                   <div class="col-md-5"><img class="d-block w-100" src="banner-images/tv.png" alt="Second slide"></div>
                 </div>
@@ -74,7 +78,7 @@
                   <div class="col-md-7"> <h1> X-Box For Your living Room</h1>
                     <p>This is the best X-Box for people who just want to waste their time by listening the funny world. </p>
                     <h1 class="price">$500</h1>
-                    <button class="buy-now-button"> Buy Now</button>
+                    <button onclick="myFunction()" class="buy-now-button"> Buy Now</button>
                   </div>
                   <div class="col-md-5"><img class="d-block w-100" src="banner-images/xbox.png" alt="Third slide"></div>
                 </div>
@@ -122,35 +126,35 @@
     <!--start shoes container-->
     <div class="container shoes" id="shoes">
 
-      <h3>Shoes</h3>
+      <h2 class="h2-tag">Shoes </h2>
 
       <div class="card-deck">
-        <div class="card">
-          <img class="card-img-top" src="shoes/shoe-1.png" alt="Card image cap">
+        <div class="card" id="card1">
+          <img id="img1" onmouseover="setNewImage1()" onmouseout="setOldImage1()" class="card-img-top" src="shoes/shoe-1.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Supply 350</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             
               <h5>$500</h5>
-              <button class="buy-now-button">Buy Now</button>
+              <button onclick="myFunction()" class="buy-now-button">Buy Now</button>
           </div>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="shoes/shoe-2.png" alt="Card image cap">
+        <div class="card" id="card2">
+          <img id="img2" onmouseover="setNewImage2()" onmouseout="setOldImage2()" class="card-img-top" src="shoes/shoe-2.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Nike 360</h5>
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
             <h5>$600</h5>
-            <button class="buy-now-button">Buy Now</button>
+            <button onclick="myFunction()" class="buy-now-button">Buy Now</button>
           </div>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="shoes/shoe-3.png" alt="Card image cap">
+        <div class="card" id="card3">
+          <img id="img3" onmouseover="setNewImage3()" onmouseout="setOldImage3()" class="card-img-top" src="shoes/shoe-3.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Red Airmax</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
             <h5>$450</h5>
-            <button class="buy-now-button">Buy Now</button>
+            <button onclick="myFunction()" class="buy-now-button">Buy Now</button>
           </div>
         </div>
       </div>
@@ -161,9 +165,9 @@
 <!--start Bag container-->
 
 <div class="container bagpack" id="bagpack">
-  <h2>Bags</h2>
+  <h2 class = "h2-tag">Bags</h2>
   <div class="card-deck">
-    <div class="card">
+    <div class="card" id="card4">
       <img class="card-img-top" src="bags/bag-1.png" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Red Laltu Bag</h5>
@@ -172,10 +176,10 @@
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
       <div class="card-footer">
-        <button class="buy-now-button">Buy Now</button>
+        <button onclick="myFunction()" class="buy-now-button">Buy Now</button>
       </div>
     </div>
-    <div class="card">
+    <div class="card" id="card5">
       <img class="card-img-top" src="bags/bag-2.png" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Blue Niltu Bag</h5>
@@ -183,10 +187,10 @@
         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
       </div>
       <div class="card-footer">
-        <button class="buy-now-button">Buy Now</button>
+        <button onclick="myFunction()" class="buy-now-button">Buy Now</button>
       </div>
     </div>
-    <div class="card">
+    <div class="card" id="card6">
       <img class="card-img-top" src="bags/bag-3.png" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Black Kaltu Bag</h5>
@@ -195,7 +199,7 @@
       </div>
       <div class="card-footer">
 
-        <button class="buy-now-button">Buy Now</button>
+        <button onclick="myFunction()" id="buy-delete" class="buy-now-button">Buy Now</button>
        
       </div>
     </div>
@@ -204,19 +208,212 @@
 <!--start bag container-->
 
 <!--start let's touch container-->
-<div class="container d-flex align-items-center justify-content-center orange-bg" id="contactus">
+<div class="container d-flex align-items-center justify-content-center orange-bg" id="contactus" ondblclick="setNewColor()" onmouseout="setNormalColor()">
 
  <div> <h3>LET'S STAY IN TOUCH</h3>
   <h6>GET updates on sales, specials and more</h6>
-  <input class="form-control" placeholder="Enter Your Email" type="text">
-  <button class="buy-now-button">SUBMIT</button></div>
+  <input id="email" type="text" placeholder="abc@gmail.com">
+ 
   
+  <button id="submit" style="  background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);
+   border-radius: 8px;
+    padding: 9px 25px;
+    cursor: pointer;
+    " disabled>SUBMIT</button></div>
+
+  <!-- <input id="type-delete" type="text" placeholder="Delete please">
+  <button id="delete-message" disabled>Delete</button>
+   -->
 </div>
 
 <!--end let's touch container-->
 <footer>
   <small><p>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</p></small>
 </footer>
+
+<script>
+
+//color same class h2 tag(shoes and bag)
+var elements = document.getElementsByClassName('h2-tag');
+for (var i = 0, len = elements.length; i < len; i++) {
+    // elements[i].style ...
+    elements[i].style.color = 'blue';
+}
+
+
+
+// set the radious
+var cardBorder = document.getElementsByClassName('card');
+for (var i = 0, len = cardBorder.length; i < len; i++) {
+    // elements[i].style ...
+    cardBorder[i].style.borderRadius = '30px';
+    
+}
+
+//hover the bagpack nd color change
+
+ document.getElementById('bagpack').addEventListener('mouseover',function(){
+
+document.getElementById('bagpack').style.backgroundColor = 'blue'; 
+
+})
+
+document.getElementById('bagpack').addEventListener('mouseout',function(){
+
+document.getElementById('bagpack').style.backgroundColor = 'white'; 
+
+})
+
+
+// background color change on card card but for every card at once
+
+// const cardHover = document.getElementsByClassName('card');
+// for(var i=0; i<cardHover.length; i++){
+//   cardHover[i].addEventListener('mouseover',function(){
+//     for(var j=0; j<i; j++){
+//    cardHover[j].style.backgroundColor='blue';
+//     }})}
+
+// for(var i=0; i<cardHover.length; i++){
+//   cardHover[i].addEventListener('mouseout',function(){
+//     for(var j=0; j<i; j++){
+//    cardHover[j].style.backgroundColor='white';
+//     }})}
+
+
+//btn onclik work
+
+function myFunction() {
+  document.getElementsByClassName('buy-now-button');
+  console.log('add to cart');
+}
+
+
+document.getElementById('buy-delete').addEventListener('click',function(){
+        document.getElementById('buy-delete').style.display='none';
+    })
+
+// hover and out color change card1
+    document.getElementById('card1').addEventListener('mouseover',function(){
+        document.getElementById('card1').style.backgroundColor='lightblue';
+    })
+
+    document.getElementById('card1').addEventListener('mouseout',function(){
+        document.getElementById('card1').style.backgroundColor='white';
+    })
+
+    // hover and out color change card2
+     document.getElementById('card2').addEventListener('mouseover',function(){
+        document.getElementById('card2').style.backgroundColor='lightblue';
+    })
+
+    document.getElementById('card2').addEventListener('mouseout',function(){
+        document.getElementById('card2').style.backgroundColor='white';
+    })
+
+       // hover and out color change card3
+       document.getElementById('card3').addEventListener('mouseover',function(){
+        document.getElementById('card3').style.backgroundColor='lightblue';
+    })
+
+    document.getElementById('card3').addEventListener('mouseout',function(){
+        document.getElementById('card3').style.backgroundColor='white';
+    })
+
+       // hover and out color change card4
+       document.getElementById('card4').addEventListener('mouseover',function(){
+        document.getElementById('card4').style.backgroundColor='lightblue';
+    })
+
+    document.getElementById('card4').addEventListener('mouseout',function(){
+        document.getElementById('card4').style.backgroundColor='white';
+    })
+
+       // hover and out color change card5
+       document.getElementById('card5').addEventListener('mouseover',function(){
+        document.getElementById('card5').style.backgroundColor='lightblue';
+    })
+
+    document.getElementById('card5').addEventListener('mouseout',function(){
+        document.getElementById('card5').style.backgroundColor='white';
+    })
+
+       // hover and out color change card6
+       document.getElementById('card6').addEventListener('mouseover',function(){
+        document.getElementById('card6').style.backgroundColor='lightblue';
+    })
+
+    document.getElementById('card6').addEventListener('mouseout',function(){
+        document.getElementById('card6').style.backgroundColor='white';
+    })
+
+
+    // for sumbit and type email
+    document.getElementById('email').addEventListener('keyup',function(event){
+       
+        if(event.target.value == 'arpita@gmail.com'){
+            document.getElementById('submit').removeAttribute('disabled');
+            document.getElementById('submit').addEventListener('click',function(){
+              alert("Hello! Wellcom!! You Are Successfully Login!");
+              event.target.value=' ';
+            })     
+        }
+        else{
+
+            document.getElementById('submit').setAttribute('disabled',true);
+        }
+
+       
+    })
+
+    //set the image 1 when mouse over
+
+    function setNewImage1(){
+
+      document.getElementById('img1').src="shoes/ladies1.jpg";
+
+    }
+
+    function setOldImage1(){
+      document.getElementById('img1').src="shoes/shoe-1.png";
+    }
+
+     //set the image 2 when mouse over
+
+     function setNewImage2(){
+
+       document.getElementById('img2').src="shoes/ladies2.jpg";
+
+    }
+
+  function setOldImage2(){
+     document.getElementById('img2').src="shoes/shoe-2.png";
+   }
+
+   
+     //set the image 3 when mouse over
+
+     function setNewImage3(){
+
+document.getElementById('img3').src="shoes/ladies3.jpg";
+
+}
+
+function setOldImage3(){
+document.getElementById('img3').src="shoes/shoe-3.png";
+}
+
+function setNewColor() {
+  document.getElementById('contactus').style.backgroundColor = 'grey';
+}
+
+function setNormalColor(){
+  document.getElementById('contactus').style.backgroundColor = ' #fceae8';
+}
+
+</script>
+
+
 
 
     <!-- for js -->
